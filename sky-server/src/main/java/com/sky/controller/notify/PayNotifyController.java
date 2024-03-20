@@ -111,7 +111,7 @@ public class PayNotifyController {
      */
     private void responseToWeixin(HttpServletResponse response) throws Exception{
         response.setStatus(200);
-        HashMap<Object, Object> map = new HashMap<>();
+        HashMap<Object, Object> map = new HashMap();
         map.put("code", "SUCCESS");
         map.put("message", "SUCCESS");
         response.setHeader("Content-type", ContentType.APPLICATION_JSON.toString());
